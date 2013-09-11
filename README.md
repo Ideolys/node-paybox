@@ -104,7 +104,7 @@ FAQ
 
 ### Why this module generates a string `body` for a form ?
 
-This module computes the signature of your transaction. This signature is not the same if fields are not sorted in a different way.
+This module computes the signature of your transaction. This signature is not the same if fields are sorted in a different way.
 
 Because Javascript does not specify the order of fields in an objet while enumerating them we have to be sure the order is not changed between signature computing and form generation.
 
