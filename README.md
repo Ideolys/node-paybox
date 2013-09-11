@@ -6,7 +6,7 @@ NodeJS library to simply connect to the Paybox platform
 
 ### Licence
 
-Copyright (c) 2013, Ideolys
+Copyright (c) 2013, Ideolys.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
