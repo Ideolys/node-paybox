@@ -46,7 +46,7 @@ paybox.createTransaction(
 
 ### What does transaction look like ?
 
-```json
+```javascript
 {
   url     : 'https://preprod-tpeweb.paybox.com/cgi/MYchoix_pagepaiement.cgi',
   method  : 'POST',
