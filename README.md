@@ -77,12 +77,42 @@ When you have your `transaction` from `paybox.createtransaction()` method you ca
 
 Form's fields `action` and `method` have to be set respectively to `url` and `method` fields from `transaction`.
 
-Check identity of the paybox response
--------------------------------------
+Interpret Paybox response
+-------------------------
 
 Whatever you use `ExpressJS` or another Framework you have to intercept request coming from the given `PBX_REPONDER_A` field.
 
-One a request is intercepted you can check if it's a paybox request or not with `paybox.checkIdentity()` method.
+After this you can call `paybox.response()` method to check sender identity and errors.
+
+```javascript
+// ExpressJS example to get datas received in the request
+var datas = req.body;
+
+// ExpressJS example to get the param "transactionId" passed in the url
+var transactionId = req.query.transactionId;
+
+// Assuming myTransactions is where you store transactions from paybox.createTransaction() method
+// You can store it wherever you want but you have to find it to check identity
+var transaction = myTransactions[transactionId];
+
+paybox.response(transaction, datas, '/path/to/pubkey/of/paybox.pem', function(error, transaction){
+  if(error === null){
+    // payment is accepted
+  }
+  else{
+    // error is a String that you can display if you want
+  }
+});
+```
+
+Check identity of the paybox response
+-------------------------------------
+
+__This method is called by `paybox.response()` method.__
+
+Whatever you use `ExpressJS` or another Framework you have to intercept request coming from the given `PBX_REPONDER_A` field.
+
+After this you can check if it's a paybox request or not with `paybox.checkIdentity()` method.
 
 ```javascript
 // ExpressJS example to get datas received in the request

@@ -1,0 +1,12 @@
+
+{
+  "system" :  {
+    "prod" :  [
+      "https://tpeweb.paybox.com",
+      "https://tpeweb1.paybox.com"
+    ],
+    "test" :  [
+      "https://preprod-tpeweb.paybox.com"
+    ]
+  }
+}

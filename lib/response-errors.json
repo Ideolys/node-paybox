@@ -1,0 +1,21 @@
+
+{
+  "00001"     : "Authorization center connection has failed. Please try another server.",
+  "001\\d\\d" : "Authorization center refused the transaction with error %ERROR_CODE%. Please refer to Paybox documentation.",
+  "00003"     : "Paybox error",
+  "00004"     : "Incorrect cardholder number or visual cryptogram",
+  "00006"     : "Access denied",
+  "00008"     : "Incorrect end validity date",
+  "00009"     : "Error in subscription creation",
+  "00010"     : "Unknown currency",
+  "00011"     : "Incorrect amount",
+  "00015"     : "Payment already done",
+  "00016"     : "Subscriber already exists",
+  "00021"     : "Unauthorized card",
+  "00029"     : "Improper card",
+  "00030"     : "Transaction timeout",
+  "00031"     : "Reserved",
+  "00032"     : "Reserved",
+  "00033"     : "Unauthorized buyer country code",
+  "00040"     : "Operation without 3DSecure. Blocked by filter."
+}
