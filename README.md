@@ -73,7 +73,7 @@ paybox.createTransaction(
 Send transaction to Paybox
 --------------------------
 
-When you have your `transaction` from `paybox.createtransaction()` method you can create a form with `transaction.body`.
+When you have your `transaction` from `paybox.createTransaction()` method you can create a form with `transaction.body`.
 
 Form's fields `action` and `method` have to be set respectively to `url` and `method` fields from `transaction`.
 
