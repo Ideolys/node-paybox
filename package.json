@@ -1,7 +1,7 @@
 {
   "name": "paybox",
   "description": "Library to simply connect to the Paybox platform",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "main": "./lib/paybox.js",
   "engines": {
     "node": ">= 0.8.18"
